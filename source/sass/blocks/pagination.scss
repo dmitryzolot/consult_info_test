@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.pagination__page {
+  width: 15px;
+  height: 20px;
+  padding: 10px 10px 10px 15px;
+}
+
+.pagination__previous {
+  padding-top: 10px;
+}
+
+.pagination__next {
+  padding-top: 10px;
+}
+
+.pagination__link {
+  color: #48494D;
+  text-decoration: none;
+  font-family: Proxima Nova;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.pagination__link--active {
+  color: $orange;
+}
+
+.pagination__page--active-page {
+  border: 1px solid $orange;
+}
+
+.pagination__link--previous {
+  margin-top: 5px;
+}

@@ -1,0 +1,41 @@
+.hamburger {
+  background-color: $orange;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger--hidden {
+  display: none;
+}
+
+.hamburger__icon {
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.hamburger__icon::before {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.hamburger__icon::after {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+}

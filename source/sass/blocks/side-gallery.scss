@@ -1,0 +1,78 @@
+.side-gallery {
+  width: 100%;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.side-gallery--aerostats {
+  background-image: url('../img/drew-colins-1114440-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.side-gallery--photosets {
+  background-image: url('../img/jeremy-bishop-1114290-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.side-gallery--birds {
+  background-image: url('../img/bogdan-pasca-1114196-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.side-gallery__title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 168px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side-gallery__link {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid $orange;
+  box-sizing: border-box;
+  width: 170px;
+  height: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 10px 59px 20px 30px;
+}
+
+.side-gallery__link::after {
+  position: absolute;
+  left: 130px;
+  top: 12px;
+  content: url('../img/arrow.svg');
+}
+
+.side-gallery__link a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.side-gallery__title--light {
+  color: #000000;
+}
+
+.side-gallery__link--light {
+  background-color: $orange;
+}

@@ -1,0 +1,36 @@
+.news-section {
+  background-color: #ffffff;
+}
+
+.news-section__title {
+  font-family: SF UI Display;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+  margin-top: 0;
+  width: 228px;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.news-section__latest {
+  min-width: 228px;
+  margin-right: 5%;
+  margin-left: 5%;
+  min-height: 334px;
+  background-image: url('../img/1344287851_w640_h640_33_107.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  // flex-direction: column;
+  align-items: flex-end;
+}
+
+.news-section__news-block {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

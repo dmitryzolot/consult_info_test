@@ -1,0 +1,232 @@
+.bottom-slider__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 27px;
+}
+
+.bottom-slider__link {
+  width: 109px;
+  height: 31px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+.bottom-slider__link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/*Слайдер*/
+
+#i6, #i7, #i8, #i9, #i10{ display: none;}
+
+.bottom-slider__wrap {
+  margin-top: 50px;
+  padding-bottom: 10px;
+  min-width: 288px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.bottom-slider{
+    position: relative;
+    width: 100%;
+    height: 175px;
+    padding-bottom: 38%;
+    user-select: none;
+    background-color: #ffffff;
+  }
+
+  .bottom-slider .slide_bottom{
+    position: absolute;
+    width: 100%;;
+    min-height: 146px;
+  }
+  .bottom-slider .slide_bottom img{
+    width: inherit;
+    height: inherit;
+  }
+
+    .prev_bottom, .next_bottom{
+    width: 12%;
+    height: inherit;
+    position: absolute;
+    top:0;
+    background-color: rgba(88, 88, 88,.2);
+    color:rgba(244, 244, 244,.9);
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+
+    @media screen and (max-width: 685px){
+      display: none;
+    }
+  }
+
+  .next_bottom{right:0;}
+  .prev_bottom{left:0;}
+
+  label span{
+    position: absolute;
+    font-size: 100pt;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev_bottom:hover, .next_bottom:hover{
+    transition: .3s;
+    background-color: rgba(88, 88, 89,.8);
+    color: #ffffff;
+  }
+
+.bottom-slider #nav_slide-bottom{
+  width: 100%;
+  bottom: 5%;
+  height: 11px;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  cursor: default;
+}
+
+#nav_slide-bottom .dots--bottom{
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .4s;
+}
+
+#nav_slide .dots--bottom:hover {
+  cursor: pointer;
+  background-color: #000000;
+  transition: .25s
+}
+
+.slide_bottom{
+  z-index: -1;
+  width: 100%;
+}
+
+  #i6:checked ~ #six  ,
+  #i7:checked ~ #seven  ,
+  #i8:checked ~ #eight,
+  #i9:checked ~ #nine ,
+  #i10:checked ~ #ten
+  {z-index: 9; animation: scroll 1s ease-in-out;}
+
+  #i6:checked  ~  #nav_slide-bottom #dot6,
+  #i7:checked  ~  #nav_slide-bottom #dot7,
+  #i8:checked  ~  #nav_slide-bottom #dot8,
+  #i9:checked  ~  #nav_slide-bottom #dot9,
+  #i10:checked  ~  #nav_slide-bottom #dot10
+  { background-color: #000000;}
+
+@keyframes scroll{
+  0%{ opacity:.4;}
+  100%{opacity:1;}
+}
+
+/* .yt{
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  width: 150px;
+  height:50px;
+  border: outset #2c2c2c 4px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30pt;
+  transition: .5s;
+}
+
+.yt a{
+  text-decoration: none;
+  color: #4c4c4c;
+  transition: .5s;
+}
+
+.yt:hover{
+  background: #4c4c4c;
+  transition: .3s;
+}
+
+.yt:hover a{
+  color: #fff;
+  transition: .3s;
+}
+ */
+@media screen and (max-width: 685px){
+  .bottom-slider{
+    border: none;
+    width: 100%;
+
+    padding-bottom: 0;
+  }
+
+  label span { font-size: 50pt; }
+
+  .prev_bottom, .next_bottom{
+    width: 15%;
+  }
+  #nav_slide .dots--bottom{
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen  and(min-width: 970px){
+  .me{ display: none;}
+}
+
+#six {
+  background-image: url('../img/floris-jan-roelof-huiskamp-1114976-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seven {
+  background-image: url('../img/drew-colins-1114447-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#eight {
+  background-image: url('../img/lasse-moller-1115041-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nine {
+  background-image: url('../img/bo-zheng-1114278-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ten {
+  background-image: url('../img/lasse-moller-1115041-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,36 @@
+// подключение normalize
+@import "includes/normalize.scss";
+
+// подключение переменных
+@import "includes/variables.scss";
+
+// подключение миксинов
+@import "includes/mixins.scss";
+
+// подключение общих стилей
+@import "includes/common.scss";
+
+// подключение шрифтов
+@import "includes/fonts.scss";
+
+// подключение всех стилей
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/page-content.scss";
+@import "blocks/main-title.scss";
+@import "blocks/menu.scss";
+@import "blocks/menu-close.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/intro.scss";
+@import "blocks/intro-slider.scss";
+@import "blocks/top-slider.scss";
+@import "blocks/news-section.scss";
+@import "blocks/news-note.scss";
+@import "blocks/reviews-section.scss";
+@import "blocks/review-note.scss";
+@import "blocks/pagination.scss";
+@import "blocks/bottom-gallery.scss";
+@import "blocks/bottom-slider.scss";
+@import "blocks/side-galleries.scss";
+@import "blocks/side-gallery.scss";
+@import "blocks/copyright.scss";

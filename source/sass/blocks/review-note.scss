@@ -1,0 +1,33 @@
+.review-note {
+  padding-bottom: 15px;
+}
+
+.review-note__photo {
+  margin-bottom: 15px;
+}
+
+.review-note__photo img {
+  width: 100%;
+  height: auto;
+}
+
+.review-note__title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.review-note__title a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.review-note__content {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}

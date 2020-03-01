@@ -1,0 +1,50 @@
+.bottom-gallery {
+  width: 100%;
+  min-height: 176px;
+  background-image: url('../img/david-hofmann-588877-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bottom-gallery__title {
+  color: #ffffff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.bottom-gallery__link {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid $orange;
+  box-sizing: border-box;
+  width: 170px;
+  height: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 59px 20px 30px;
+}
+
+.bottom-gallery__link::after {
+  position: absolute;
+  left: 130px;
+  top: 12px;
+  content: url('../img/arrow.svg');
+}
+
+.bottom-gallery__link a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

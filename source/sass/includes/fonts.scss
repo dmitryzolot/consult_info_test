@@ -1,0 +1,27 @@
+// Raleway обычное начертание
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"),
+    url("../fonts/raleway-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// PlayfairDisplay полужирное начертание
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"),
+    url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Raleway обычное начертание
+@font-face {
+  font-family: "SF UI Display";
+  src: local("SF UI Display"),
+    url("../fonts/sf-ui-display-light-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}

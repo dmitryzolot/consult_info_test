@@ -1,0 +1,16 @@
+.menu-close {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+max-width: 768px;
+}
+
+.menu-close__svg {
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+
+.menu-close--nojs {
+  display: none;
+}
